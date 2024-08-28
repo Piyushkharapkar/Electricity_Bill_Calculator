@@ -1,0 +1,195 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image:url("background.jpg");
+    background-size: cover;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.958);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    border: 1px solid #e0e0e0;
+    transition: transform 0.3s ease;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #424242;
+}
+
+.qr-code {
+    width: 300px; /* Set the width you desire */
+    height: auto; /* Maintain aspect ratio */
+    margin: 20px 0; /* Add some margin */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    color: #424242;
+    text-align: left;
+}
+
+input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+button {
+    padding: 10px;
+    background-color: #6242c4;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #312066;
+}
+
+.separator {
+    margin: 20px 0;
+    font-size: 14px;
+    color: #312066;
+    text-align: center;
+    font-weight: bold;
+    font:x-large ;
+}
+.head-card{
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px #dcd8d8, -5px -5px 10px #ffffff;
+    margin-bottom: 20px;
+    border-style:groove;
+    border-color: #6242c4;
+    background-color: #a78ef36d;
+}
+.tenant-card {
+    border-style: double;
+    border-color: #6242c4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #dcd8d8, -5px -5px 10px #ffffff;
+    margin-bottom: 20px;
+}
+
+.tenant-card label {
+    color: #333;
+    text-align: left;
+    display: block;
+}
+
+.tenant-card input {
+    border: 1px solid #bbb;
+    width: calc(100% - 20px);
+    box-sizing: border-box;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #424242;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 300px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#splitBillLink{
+    color: #312066;
+    text-decoration: wavy;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#payButton {
+    padding: 15px;
+    background-color: #764eee;
+    color: white;  
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+#payButton:hover {
+    background-color: #422a89;
+}
+
+
+
+
+
+#finalAmountText {
+    margin-top: 20px;
+    display: none; /* Hidden by default */
+}
+
+#finalAmountText span {
+    font-size: 24px;
+    font-weight: bold;
+    color: #764eee; /* Bootstrap's red color */
+}
+
+.hidden {
+    display: none;
+}
